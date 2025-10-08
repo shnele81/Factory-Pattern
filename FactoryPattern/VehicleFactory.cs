@@ -8,10 +8,14 @@ public static class VehicleFactory
         {
             return new Motorcycle();
         }
+        if (numberOfTires == 4)
+        {
+            return new Car();
+        }
         else
         {
             return new Car();
         }
-        
+
     }
 }
